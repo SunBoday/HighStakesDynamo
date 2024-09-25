@@ -65,7 +65,7 @@
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         [self.stakes_webView loadRequest:request];
     } else {
-        NSURL *url = [NSURL URLWithString:@"https://www.termsfeed.com/live/d0ab9d39-6f1d-4461-b918-75d770f31adb"];
+        NSURL *url = [NSURL URLWithString:@"https://www.termsfeed.com/live/190f8853-c8d4-421d-a1c0-937135dda34b"];
         if (url == nil) {
             NSLog(@"Invalid URL");
             return;
