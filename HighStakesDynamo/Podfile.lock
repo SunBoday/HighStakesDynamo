@@ -1,0 +1,22 @@
+PODS:
+  - AppsFlyerFramework (6.14.3):
+    - AppsFlyerFramework/Main (= 6.14.3)
+  - AppsFlyerFramework/Main (6.14.3)
+  - IQKeyboardManagerSwift (7.0.3)
+
+DEPENDENCIES:
+  - AppsFlyerFramework
+  - IQKeyboardManagerSwift
+
+SPEC REPOS:
+  trunk:
+    - AppsFlyerFramework
+    - IQKeyboardManagerSwift
+
+SPEC CHECKSUMS:
+  AppsFlyerFramework: 0a68f5b72bbbadfa71d4ae3eaf040e82d62e8518
+  IQKeyboardManagerSwift: f9c5dc36cba16ddd2e51fa7d51c34a2e083029b5
+
+PODFILE CHECKSUM: cad45f70f14eb3a882f8d9ec8b94f0e725f08d15
+
+COCOAPODS: 1.15.2

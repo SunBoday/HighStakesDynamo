@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		273F9C166C8E9B2D5FB06555 /* Pods_HighStakesDynamo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91ED1AA73B919D4DF164B855 /* Pods_HighStakesDynamo.framework */; };
+		E9B63D9C2CA392240097E742 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63D9B2CA392240097E742 /* AppDelegate.swift */; };
+		E9B63D9E2CA392240097E742 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63D9D2CA392240097E742 /* SceneDelegate.swift */; };
+		E9B63DA02CA392240097E742 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63D9F2CA392240097E742 /* ViewController.swift */; };
+		E9B63DA32CA392240097E742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B63DA12CA392240097E742 /* Main.storyboard */; };
+		E9B63DA52CA392260097E742 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9B63DA42CA392260097E742 /* Assets.xcassets */; };
+		E9B63DA82CA392260097E742 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9B63DA62CA392260097E742 /* LaunchScreen.storyboard */; };
+		E9B63DB32CA392270097E742 /* HighStakesDynamoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DB22CA392270097E742 /* HighStakesDynamoTests.swift */; };
+		E9B63DBD2CA392270097E742 /* HighStakesDynamoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DBC2CA392270097E742 /* HighStakesDynamoUITests.swift */; };
+		E9B63DBF2CA392270097E742 /* HighStakesDynamoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DBE2CA392270097E742 /* HighStakesDynamoUITestsLaunchTests.swift */; };
+		E9B63DCC2CA394ED0097E742 /* StakesSelectCoinVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DCB2CA394ED0097E742 /* StakesSelectCoinVC.swift */; };
+		E9B63DCE2CA3956D0097E742 /* StakesSoloCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DCD2CA3956D0097E742 /* StakesSoloCardVC.swift */; };
+		E9B63DD02CA3959B0097E742 /* StakesDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DCF2CA3959A0097E742 /* StakesDataModel.swift */; };
+		E9B63DD22CA395B60097E742 /* StakesResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DD12CA395B60097E742 /* StakesResultVC.swift */; };
+		E9B63DD42CA395D90097E742 /* StakesExt+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DD32CA395D90097E742 /* StakesExt+UIViewController.swift */; };
+		E9B63DD62CA396260097E742 /* StakesMatchedCardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DD52CA396260097E742 /* StakesMatchedCardsVC.swift */; };
+		E9B63DD82CA3963C0097E742 /* StakesMultiCardCellVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DD72CA3963C0097E742 /* StakesMultiCardCellVC.swift */; };
+		E9B63DDA2CA396560097E742 /* StakesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DD92CA396550097E742 /* StakesExtension.swift */; };
+		E9B63DDC2CA396730097E742 /* StakesFeedBackVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B63DDB2CA396730097E742 /* StakesFeedBackVC.swift */; };
+		E9BEF6442CA3E281004B3421 /* Wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9BEF6412CA3E280004B3421 /* Wrong.wav */; };
+		E9BEF6452CA3E281004B3421 /* Win.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9BEF6422CA3E280004B3421 /* Win.wav */; };
+		E9BEF6462CA3E281004B3421 /* a1.wav in Resources */ = {isa = PBXBuildFile; fileRef = E9BEF6432CA3E281004B3421 /* a1.wav */; };
+		E9BEF64A2CA3E539004B3421 /* StakesPrivacyWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BEF6492CA3E539004B3421 /* StakesPrivacyWebVC.m */; };
+		E9BEF64D2CA3E610004B3421 /* StakesTypeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BEF64C2CA3E610004B3421 /* StakesTypeManager.m */; };
+		E9BEF6502CA3E648004B3421 /* UIViewController+Array.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BEF64F2CA3E647004B3421 /* UIViewController+Array.m */; };
+		E9BEF6532CA3E7C0004B3421 /* StakesNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BEF6522CA3E7C0004B3421 /* StakesNetManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9B63DAF2CA392270097E742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9B63D902CA392240097E742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9B63D972CA392240097E742;
+			remoteInfo = HighStakesDynamo;
+		};
+		E9B63DB92CA392270097E742 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9B63D902CA392240097E742 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9B63D972CA392240097E742;
+			remoteInfo = HighStakesDynamo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15CCF304A7405DE96C02F0F4 /* Pods-HighStakesDynamo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighStakesDynamo.debug.xcconfig"; path = "Target Support Files/Pods-HighStakesDynamo/Pods-HighStakesDynamo.debug.xcconfig"; sourceTree = "<group>"; };
+		62C91CB88D817EB0AEF8BBE7 /* Pods-HighStakesDynamo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighStakesDynamo.release.xcconfig"; path = "Target Support Files/Pods-HighStakesDynamo/Pods-HighStakesDynamo.release.xcconfig"; sourceTree = "<group>"; };
+		91ED1AA73B919D4DF164B855 /* Pods_HighStakesDynamo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HighStakesDynamo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B63D982CA392240097E742 /* HighStakesDynamo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighStakesDynamo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B63D9B2CA392240097E742 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9B63D9D2CA392240097E742 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E9B63D9F2CA392240097E742 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9B63DA22CA392240097E742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9B63DA42CA392260097E742 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9B63DA72CA392260097E742 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9B63DA92CA392260097E742 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9B63DAE2CA392270097E742 /* HighStakesDynamoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighStakesDynamoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B63DB22CA392270097E742 /* HighStakesDynamoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighStakesDynamoTests.swift; sourceTree = "<group>"; };
+		E9B63DB82CA392270097E742 /* HighStakesDynamoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighStakesDynamoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B63DBC2CA392270097E742 /* HighStakesDynamoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighStakesDynamoUITests.swift; sourceTree = "<group>"; };
+		E9B63DBE2CA392270097E742 /* HighStakesDynamoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighStakesDynamoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9B63DCB2CA394ED0097E742 /* StakesSelectCoinVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakesSelectCoinVC.swift; sourceTree = "<group>"; };
+		E9B63DCD2CA3956D0097E742 /* StakesSoloCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakesSoloCardVC.swift; sourceTree = "<group>"; };
+		E9B63DCF2CA3959A0097E742 /* StakesDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakesDataModel.swift; sourceTree = "<group>"; };
+		E9B63DD12CA395B60097E742 /* StakesResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakesResultVC.swift; sourceTree = "<group>"; };
+		E9B63DD32CA395D90097E742 /* StakesExt+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StakesExt+UIViewController.swift"; sourceTree = "<group>"; };
+		E9B63DD52CA396260097E742 /* StakesMatchedCardsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakesMatchedCardsVC.swift; sourceTree = "<group>"; };
+		E9B63DD72CA3963C0097E742 /* StakesMultiCardCellVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakesMultiCardCellVC.swift; sourceTree = "<group>"; };
+		E9B63DD92CA396550097E742 /* StakesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakesExtension.swift; sourceTree = "<group>"; };
+		E9B63DDB2CA396730097E742 /* StakesFeedBackVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StakesFeedBackVC.swift; sourceTree = "<group>"; };
+		E9BEF6412CA3E280004B3421 /* Wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Wrong.wav; sourceTree = "<group>"; };
+		E9BEF6422CA3E280004B3421 /* Win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Win.wav; sourceTree = "<group>"; };
+		E9BEF6432CA3E281004B3421 /* a1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = a1.wav; sourceTree = "<group>"; };
+		E9BEF6472CA3E539004B3421 /* HighStakesDynamo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HighStakesDynamo-Bridging-Header.h"; sourceTree = "<group>"; };
+		E9BEF6482CA3E539004B3421 /* StakesPrivacyWebVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StakesPrivacyWebVC.h; sourceTree = "<group>"; };
+		E9BEF6492CA3E539004B3421 /* StakesPrivacyWebVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StakesPrivacyWebVC.m; sourceTree = "<group>"; };
+		E9BEF64B2CA3E610004B3421 /* StakesTypeManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StakesTypeManager.h; sourceTree = "<group>"; };
+		E9BEF64C2CA3E610004B3421 /* StakesTypeManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StakesTypeManager.m; sourceTree = "<group>"; };
+		E9BEF64E2CA3E647004B3421 /* UIViewController+Array.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Array.h"; sourceTree = "<group>"; };
+		E9BEF64F2CA3E647004B3421 /* UIViewController+Array.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Array.m"; sourceTree = "<group>"; };
+		E9BEF6512CA3E7C0004B3421 /* StakesNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StakesNetManager.h; sourceTree = "<group>"; };
+		E9BEF6522CA3E7C0004B3421 /* StakesNetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StakesNetManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9B63D952CA392240097E742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				273F9C166C8E9B2D5FB06555 /* Pods_HighStakesDynamo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B63DAB2CA392270097E742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B63DB52CA392270097E742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70A6324D3194C92ABD36737A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				15CCF304A7405DE96C02F0F4 /* Pods-HighStakesDynamo.debug.xcconfig */,
+				62C91CB88D817EB0AEF8BBE7 /* Pods-HighStakesDynamo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E85CF8658BDD8F132A1EB18D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91ED1AA73B919D4DF164B855 /* Pods_HighStakesDynamo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E9B63D8F2CA392240097E742 = {
+			isa = PBXGroup;
+			children = (
+				E9B63D9A2CA392240097E742 /* HighStakesDynamo */,
+				E9B63DB12CA392270097E742 /* HighStakesDynamoTests */,
+				E9B63DBB2CA392270097E742 /* HighStakesDynamoUITests */,
+				E9B63D992CA392240097E742 /* Products */,
+				70A6324D3194C92ABD36737A /* Pods */,
+				E85CF8658BDD8F132A1EB18D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9B63D992CA392240097E742 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9B63D982CA392240097E742 /* HighStakesDynamo.app */,
+				E9B63DAE2CA392270097E742 /* HighStakesDynamoTests.xctest */,
+				E9B63DB82CA392270097E742 /* HighStakesDynamoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9B63D9A2CA392240097E742 /* HighStakesDynamo */ = {
+			isa = PBXGroup;
+			children = (
+				E9B63D9B2CA392240097E742 /* AppDelegate.swift */,
+				E9B63D9D2CA392240097E742 /* SceneDelegate.swift */,
+				E9B63D9F2CA392240097E742 /* ViewController.swift */,
+				E9B63DCB2CA394ED0097E742 /* StakesSelectCoinVC.swift */,
+				E9B63DCD2CA3956D0097E742 /* StakesSoloCardVC.swift */,
+				E9B63DCF2CA3959A0097E742 /* StakesDataModel.swift */,
+				E9B63DD12CA395B60097E742 /* StakesResultVC.swift */,
+				E9B63DD32CA395D90097E742 /* StakesExt+UIViewController.swift */,
+				E9B63DD52CA396260097E742 /* StakesMatchedCardsVC.swift */,
+				E9B63DD72CA3963C0097E742 /* StakesMultiCardCellVC.swift */,
+				E9B63DD92CA396550097E742 /* StakesExtension.swift */,
+				E9B63DDB2CA396730097E742 /* StakesFeedBackVC.swift */,
+				E9BEF6482CA3E539004B3421 /* StakesPrivacyWebVC.h */,
+				E9BEF6492CA3E539004B3421 /* StakesPrivacyWebVC.m */,
+				E9BEF64B2CA3E610004B3421 /* StakesTypeManager.h */,
+				E9BEF64C2CA3E610004B3421 /* StakesTypeManager.m */,
+				E9BEF64E2CA3E647004B3421 /* UIViewController+Array.h */,
+				E9BEF64F2CA3E647004B3421 /* UIViewController+Array.m */,
+				E9BEF6512CA3E7C0004B3421 /* StakesNetManager.h */,
+				E9BEF6522CA3E7C0004B3421 /* StakesNetManager.m */,
+				E9BEF6432CA3E281004B3421 /* a1.wav */,
+				E9BEF6422CA3E280004B3421 /* Win.wav */,
+				E9BEF6412CA3E280004B3421 /* Wrong.wav */,
+				E9B63DA12CA392240097E742 /* Main.storyboard */,
+				E9B63DA42CA392260097E742 /* Assets.xcassets */,
+				E9B63DA62CA392260097E742 /* LaunchScreen.storyboard */,
+				E9B63DA92CA392260097E742 /* Info.plist */,
+				E9BEF6472CA3E539004B3421 /* HighStakesDynamo-Bridging-Header.h */,
+			);
+			path = HighStakesDynamo;
+			sourceTree = "<group>";
+		};
+		E9B63DB12CA392270097E742 /* HighStakesDynamoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9B63DB22CA392270097E742 /* HighStakesDynamoTests.swift */,
+			);
+			path = HighStakesDynamoTests;
+			sourceTree = "<group>";
+		};
+		E9B63DBB2CA392270097E742 /* HighStakesDynamoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9B63DBC2CA392270097E742 /* HighStakesDynamoUITests.swift */,
+				E9B63DBE2CA392270097E742 /* HighStakesDynamoUITestsLaunchTests.swift */,
+			);
+			path = HighStakesDynamoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9B63D972CA392240097E742 /* HighStakesDynamo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B63DC22CA392270097E742 /* Build configuration list for PBXNativeTarget "HighStakesDynamo" */;
+			buildPhases = (
+				EEBCB1574DE3017121EB292E /* [CP] Check Pods Manifest.lock */,
+				E9B63D942CA392240097E742 /* Sources */,
+				E9B63D952CA392240097E742 /* Frameworks */,
+				E9B63D962CA392240097E742 /* Resources */,
+				34186BAC76A130940B32AC1F /* [CP] Embed Pods Frameworks */,
+				BB77113D00CC335952397474 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighStakesDynamo;
+			productName = HighStakesDynamo;
+			productReference = E9B63D982CA392240097E742 /* HighStakesDynamo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9B63DAD2CA392270097E742 /* HighStakesDynamoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B63DC52CA392270097E742 /* Build configuration list for PBXNativeTarget "HighStakesDynamoTests" */;
+			buildPhases = (
+				E9B63DAA2CA392270097E742 /* Sources */,
+				E9B63DAB2CA392270097E742 /* Frameworks */,
+				E9B63DAC2CA392270097E742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9B63DB02CA392270097E742 /* PBXTargetDependency */,
+			);
+			name = HighStakesDynamoTests;
+			productName = HighStakesDynamoTests;
+			productReference = E9B63DAE2CA392270097E742 /* HighStakesDynamoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9B63DB72CA392270097E742 /* HighStakesDynamoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9B63DC82CA392270097E742 /* Build configuration list for PBXNativeTarget "HighStakesDynamoUITests" */;
+			buildPhases = (
+				E9B63DB42CA392270097E742 /* Sources */,
+				E9B63DB52CA392270097E742 /* Frameworks */,
+				E9B63DB62CA392270097E742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9B63DBA2CA392270097E742 /* PBXTargetDependency */,
+			);
+			name = HighStakesDynamoUITests;
+			productName = HighStakesDynamoUITests;
+			productReference = E9B63DB82CA392270097E742 /* HighStakesDynamoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9B63D902CA392240097E742 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E9B63D972CA392240097E742 = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+					E9B63DAD2CA392270097E742 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E9B63D972CA392240097E742;
+					};
+					E9B63DB72CA392270097E742 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E9B63D972CA392240097E742;
+					};
+				};
+			};
+			buildConfigurationList = E9B63D932CA392240097E742 /* Build configuration list for PBXProject "HighStakesDynamo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9B63D8F2CA392240097E742;
+			productRefGroup = E9B63D992CA392240097E742 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9B63D972CA392240097E742 /* HighStakesDynamo */,
+				E9B63DAD2CA392270097E742 /* HighStakesDynamoTests */,
+				E9B63DB72CA392270097E742 /* HighStakesDynamoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9B63D962CA392240097E742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B63DA82CA392260097E742 /* LaunchScreen.storyboard in Resources */,
+				E9BEF6452CA3E281004B3421 /* Win.wav in Resources */,
+				E9BEF6462CA3E281004B3421 /* a1.wav in Resources */,
+				E9B63DA52CA392260097E742 /* Assets.xcassets in Resources */,
+				E9BEF6442CA3E281004B3421 /* Wrong.wav in Resources */,
+				E9B63DA32CA392240097E742 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B63DAC2CA392270097E742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B63DB62CA392270097E742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34186BAC76A130940B32AC1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HighStakesDynamo/Pods-HighStakesDynamo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HighStakesDynamo/Pods-HighStakesDynamo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HighStakesDynamo/Pods-HighStakesDynamo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB77113D00CC335952397474 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HighStakesDynamo/Pods-HighStakesDynamo-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HighStakesDynamo/Pods-HighStakesDynamo-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HighStakesDynamo/Pods-HighStakesDynamo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEBCB1574DE3017121EB292E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HighStakesDynamo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9B63D942CA392240097E742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B63DCC2CA394ED0097E742 /* StakesSelectCoinVC.swift in Sources */,
+				E9B63DD62CA396260097E742 /* StakesMatchedCardsVC.swift in Sources */,
+				E9B63DCE2CA3956D0097E742 /* StakesSoloCardVC.swift in Sources */,
+				E9B63DD02CA3959B0097E742 /* StakesDataModel.swift in Sources */,
+				E9B63DA02CA392240097E742 /* ViewController.swift in Sources */,
+				E9B63DD22CA395B60097E742 /* StakesResultVC.swift in Sources */,
+				E9B63D9C2CA392240097E742 /* AppDelegate.swift in Sources */,
+				E9B63DD82CA3963C0097E742 /* StakesMultiCardCellVC.swift in Sources */,
+				E9BEF64D2CA3E610004B3421 /* StakesTypeManager.m in Sources */,
+				E9B63DDA2CA396560097E742 /* StakesExtension.swift in Sources */,
+				E9BEF6532CA3E7C0004B3421 /* StakesNetManager.m in Sources */,
+				E9BEF64A2CA3E539004B3421 /* StakesPrivacyWebVC.m in Sources */,
+				E9BEF6502CA3E648004B3421 /* UIViewController+Array.m in Sources */,
+				E9B63DD42CA395D90097E742 /* StakesExt+UIViewController.swift in Sources */,
+				E9B63DDC2CA396730097E742 /* StakesFeedBackVC.swift in Sources */,
+				E9B63D9E2CA392240097E742 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B63DAA2CA392270097E742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B63DB32CA392270097E742 /* HighStakesDynamoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9B63DB42CA392270097E742 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9B63DBD2CA392270097E742 /* HighStakesDynamoUITests.swift in Sources */,
+				E9B63DBF2CA392270097E742 /* HighStakesDynamoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9B63DB02CA392270097E742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9B63D972CA392240097E742 /* HighStakesDynamo */;
+			targetProxy = E9B63DAF2CA392270097E742 /* PBXContainerItemProxy */;
+		};
+		E9B63DBA2CA392270097E742 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9B63D972CA392240097E742 /* HighStakesDynamo */;
+			targetProxy = E9B63DB92CA392270097E742 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9B63DA12CA392240097E742 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9B63DA22CA392240097E742 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9B63DA62CA392260097E742 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9B63DA72CA392260097E742 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9B63DC02CA392270097E742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9B63DC12CA392270097E742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9B63DC32CA392270097E742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15CCF304A7405DE96C02F0F4 /* Pods-HighStakesDynamo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HighStakesDynamo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HighStakesDynamo;
+				INFOPLIST_KEY_NSCameraUsageDescription = "HighStakesDynamo requires access to the camera function to take photos and share and save them.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "HighStakesDynamo requires access to the photo album feature to save pictures to the photo album.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "HighStakesDynamo Need access to your photo album to save downloaded images.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "HighStakesDynamo needs to obtain your device information for analysis and to bring you a unique gaming experience.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.stakes.HighStakesDynamo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HighStakesDynamo/HighStakesDynamo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E9B63DC42CA392270097E742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62C91CB88D817EB0AEF8BBE7 /* Pods-HighStakesDynamo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HighStakesDynamo/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HighStakesDynamo;
+				INFOPLIST_KEY_NSCameraUsageDescription = "HighStakesDynamo requires access to the camera function to take photos and share and save them.";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "HighStakesDynamo requires access to the photo album feature to save pictures to the photo album.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "HighStakesDynamo Need access to your photo album to save downloaded images.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "HighStakesDynamo needs to obtain your device information for analysis and to bring you a unique gaming experience.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.stakes.HighStakesDynamo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "HighStakesDynamo/HighStakesDynamo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E9B63DC62CA392270097E742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.stakes.HighStakesDynamoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HighStakesDynamo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HighStakesDynamo";
+			};
+			name = Debug;
+		};
+		E9B63DC72CA392270097E742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.stakes.HighStakesDynamoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HighStakesDynamo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HighStakesDynamo";
+			};
+			name = Release;
+		};
+		E9B63DC92CA392270097E742 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.stakes.HighStakesDynamoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HighStakesDynamo;
+			};
+			name = Debug;
+		};
+		E9B63DCA2CA392270097E742 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.stakes.HighStakesDynamoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HighStakesDynamo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9B63D932CA392240097E742 /* Build configuration list for PBXProject "HighStakesDynamo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B63DC02CA392270097E742 /* Debug */,
+				E9B63DC12CA392270097E742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B63DC22CA392270097E742 /* Build configuration list for PBXNativeTarget "HighStakesDynamo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B63DC32CA392270097E742 /* Debug */,
+				E9B63DC42CA392270097E742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B63DC52CA392270097E742 /* Build configuration list for PBXNativeTarget "HighStakesDynamoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B63DC62CA392270097E742 /* Debug */,
+				E9B63DC72CA392270097E742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9B63DC82CA392270097E742 /* Build configuration list for PBXNativeTarget "HighStakesDynamoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9B63DC92CA392270097E742 /* Debug */,
+				E9B63DCA2CA392270097E742 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9B63D902CA392240097E742 /* Project object */;
+}
