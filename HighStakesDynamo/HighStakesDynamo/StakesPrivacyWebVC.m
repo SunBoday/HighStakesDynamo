@@ -65,7 +65,7 @@
         NSURLRequest *request = [NSURLRequest requestWithURL:url];
         [self.stakes_webView loadRequest:request];
     } else {
-        NSURL *url = [NSURL URLWithString:@"https://tinyurl.com/VictoryPokerLegends"];
+        NSURL *url = [NSURL URLWithString:@"https://www.termsfeed.com/live/d0ab9d39-6f1d-4461-b918-75d770f31adb"];
         if (url == nil) {
             NSLog(@"Invalid URL");
             return;
